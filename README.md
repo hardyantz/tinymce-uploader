@@ -22,7 +22,7 @@ tinyMCE.init({
   theme_advanced_buttons1:"....,apwot",
         .....
 });
-- no try open your editor and upload your file.
+- open your tinymce editor and upload your file.
 
 dont forget to say 'thanks' to me if its success and usefull for you.
 
