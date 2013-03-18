@@ -28,4 +28,7 @@ dont forget to say 'thanks' to me if its success and usefull for you.
 
 author :
 hardyantz, inc 
+
 http://hardyantz.com
+
+http://hardyantz.com/2013/03/18/apwot-a-tinymce-plugin-for-upload-image-english-ver/
