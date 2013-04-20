@@ -1,7 +1,7 @@
 apwot
 =====
 
-![Image Alt](https://github.com/back2arie/apwot/raw/master/apwot/screenshot.png)
+![Image Alt](https://github.com/back2arie/apwot/raw/master/screenshot.png)
 
 Apwot is A tinyMCE plugin for file Uploader
 APWOT is a tinymce plugin for upload file, this plugin is simple as its be, simply for modification and installation.
