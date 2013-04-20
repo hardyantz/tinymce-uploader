@@ -12,10 +12,10 @@ include('config.php');
         <script type="text/javascript" src="<?php echo $config['base_url'];?>statics/js/jquery.validate.js"></script>
         <script src="<?php echo $config['base_url'];?>statics/js/jquery.min.js"></script>
 	<script src="<?php echo $config['base_url'];?>statics/js/jquery-ui.js"></script>
-	<script type="text/javascript" src="<?php echo $config['base_url'];?>statics/js/tiny_mce/tiny_mce_popup.js"></script>
-        <script type="text/javascript" src="<?php echo $config['base_url'];?>statics/js/tiny_mce/tiny_mce.js"></script>
-	<script type="text/javascript" src="<?php echo $config['base_url'];?>statics/js/tiny_mce/plugins/apwot/js/uploader.js"></script>
-	<script type="text/javascript" src="<?php echo $config['base_url'];?>statics/js/tiny_mce/plugins/apwot/js/dialog.js"></script>
+	<script type="text/javascript" src="<?php echo $config['base_url'];?>../../tiny_mce_popup.js"></script>
+        <script type="text/javascript" src="<?php echo $config['base_url'];?>../../tiny_mce.js"></script>
+	<script type="text/javascript" src="<?php echo $config['base_url'];?>js/uploader.js"></script>
+	<script type="text/javascript" src="<?php echo $config['base_url'];?>js/dialog.js"></script>
 	<script type="text/javascript">
 		$(function() {
 			$( "#tab" ).tabs();
@@ -64,7 +64,7 @@ include('config.php');
 	<form>
 	<input type="file" name="datafile" /></br>
 	<input type="button" value="upload"
-		onClick="fileUpload(this.form,'/upload_file.php','upload'); return false;" >
+		onClick="fileUpload(this.form,'<?php echo $config['base_url'];?>/upload_file.php','upload'); return false;" >
 	</form>
 	<div id="upload" style="width: 450px !important;"></div>
 	

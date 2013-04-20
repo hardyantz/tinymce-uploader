@@ -49,8 +49,6 @@ class Upload {
 		{
 			$this->initialize($props);
 		}
-
-		log_message('debug', "Upload Class Initialized");
 	}
 
 	// --------------------------------------------------------------------
@@ -188,7 +186,7 @@ class Upload {
 		$this->client_name = $this->file_name;
 
 		// Is the file type allowed to be uploaded?
-		if ( ! $this->is_allowed_filetype())
+		if ( ! $this->is_allowed_filetype(TRUE))
 		{
 			$this->set_error('upload_invalid_filetype');
 			return FALSE;
@@ -700,7 +698,7 @@ class Upload {
 			return FALSE;
 		}
 
-		if ( ! is_really_writable($this->upload_path))
+		if ( ! is_writable($this->upload_path))
 		{
 			$this->set_error('upload_not_writable');
 			return FALSE;
@@ -873,23 +871,16 @@ class Upload {
 	 */
 	public function set_error($msg)
 	{
-		$CI =& get_instance();
-		$CI->lang->load('upload');
-
 		if (is_array($msg))
 		{
 			foreach ($msg as $val)
 			{
-				$msg = ($CI->lang->line($val) == FALSE) ? $val : $CI->lang->line($val);
-				$this->error_msg[] = $msg;
-				log_message('error', $msg);
+				error_log($msg);
 			}
 		}
 		else
 		{
-			$msg = ($CI->lang->line($msg) == FALSE) ? $msg : $CI->lang->line($msg);
-			$this->error_msg[] = $msg;
-			log_message('error', $msg);
+			error_log($msg);
 		}
 	}
 
