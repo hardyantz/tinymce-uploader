@@ -1,6 +1,8 @@
 apwot
 =====
 
+![Image Alt](https://github.com/back2arie/apwot/raw/master/screenshot.png)
+
 Apwot is A tinyMCE plugin for file Uploader
 APWOT is a tinymce plugin for upload file, this plugin is simple as its be, simply for modification and installation.
 Apwot, is a weird name actually, I created this when I was develop something in my project, 
@@ -9,12 +11,8 @@ and share this plugins in github to everyone maybe,
 this is how to install the plugins:
 - download source here (of course)
 - extract plugin wherever you like.
-- move apwor folder to tinymce plugin (tinymce/plugins/apwot)
-- move file : class.upload.php, config.php, upload_editor.php, upload_file.php and statics folder
-- set your configuration in config.php file. 
-- open editor_plugin.js its located in ( tinymce/plugins/apwot )
-- change the window popup url in line 27 :
-window.open("upload_editor.php", ......
+- move it folder to tinymce plugin (tinymce/plugins/apwot)
+- set your configuration in config.php file, make sure uploads directory is writeable
 - set tinymce.init inside head tag in your index file or whatever file you wish to create your tinymce editor, add tinymce.init :
 tinyMCE.init({
   .....
